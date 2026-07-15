@@ -9,5 +9,4 @@ pandas
 scipy
 plotly
 streamlit
-os
 -e .
