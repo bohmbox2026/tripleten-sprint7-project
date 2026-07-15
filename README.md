@@ -4,9 +4,17 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-data science project for the tripleten sprint7 project. A web app.
+Projecto de ciencia de datos para el bootcamp de tripleten. 
+Una aplicacion web siguiendo el esquema de organizacion de la libreria cookiecutter-data-science (CCDS).
+La intencion de hacerlo de esta forma fue para ayudar en la organizacion del proyecto y tambien para exponerme a lo que esta libreria incluye, que es un enfoque estandarizado de crear proyectos de datos.
+Dado que el objetivo principal de este proyecto es facilitar la implementacion de un proyecto web, la mayor parte del codigo generado en python fue asistida con un LLM.
 
-## Project Organization
+El proyecto fue subido exitosamente a github.com y a render.com y los enlace tanto del repositorio como de la aplicacion son los siguientes:
+github: https://github.com/bohmbox2026/tripleten-sprint7-project.git
+render: https://tripleten-sprint7-project-oxdt.onrender.com
+
+
+## Organizacion de los archivos
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
@@ -16,15 +24,11 @@ data science project for the tripleten sprint7 project. A web app.
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   └── raw            <- Aqui se localiza el archivo de datos
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks. 
+│   ├── EDA.ipynb      <- **Este es el notebook de la exploracion de datos**
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         tripleten_sprint7_project and configuration for tools like black
@@ -42,6 +46,8 @@ data science project for the tripleten sprint7 project. A web app.
 └── tripleten_sprint7_project   <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes tripleten_sprint7_project a Python module
+    │
+    ├── app.py                  <- **Este es el archivo principal de la aplicacion con el codigo del dashboard**
     │
     ├── config.py               <- Store useful variables and configuration
     │
