@@ -2,7 +2,6 @@ loguru
 mkdocs
 pip
 python-dotenv
-python 3.12
 ruff
 tqdm
 typer
