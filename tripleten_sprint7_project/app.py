@@ -11,7 +11,7 @@ st.markdown("Esta aplicación unifica el estudio de precios y kilometraje con la
 # 1. Función consolidada para cargar y limpiar todas las variables necesarias
 @st.cache_data
 def cargar_datos_completos():
-    ruta_csv = "data/raw/vehicles_us.csv"
+    ruta_csv = "./data/raw/vehicles_us.csv"
     
     # Cargamos el dataframe usando la ruta absoluta construida
     df = pd.read_csv(ruta_csv)
