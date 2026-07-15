@@ -7,5 +7,6 @@ tqdm
 typer
 pandas
 scipy
+plotly
 streamlit
 -e .
