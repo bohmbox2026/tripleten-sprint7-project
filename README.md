@@ -5,12 +5,16 @@
 </a>
 
 Projecto de ciencia de datos para el bootcamp de tripleten. 
+
 Una aplicacion web siguiendo el esquema de organizacion de la libreria cookiecutter-data-science (CCDS).
 La intencion de hacerlo de esta forma fue para ayudar en la organizacion del proyecto y tambien para exponerme a lo que esta libreria incluye, que es un enfoque estandarizado de crear proyectos de datos.
+
 Dado que el objetivo principal de este proyecto es facilitar la implementacion de un proyecto web, la mayor parte del codigo generado en python fue asistida con un LLM.
 
 El proyecto fue subido exitosamente a github.com y a render.com y los enlace tanto del repositorio como de la aplicacion son los siguientes:
+
 github: https://github.com/bohmbox2026/tripleten-sprint7-project.git
+
 render: https://tripleten-sprint7-project-oxdt.onrender.com
 
 
