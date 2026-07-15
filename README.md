@@ -24,7 +24,7 @@ render: https://tripleten-sprint7-project-oxdt.onrender.com
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- Aqui se localiza el archivo de datos
+│   └── raw            <- **Aqui se localiza el archivo de datos**: "vehicles_us.csv"
 │
 │
 ├── notebooks          <- Jupyter notebooks. 

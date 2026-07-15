@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -11,7 +12,16 @@ st.markdown("Esta aplicación unifica el estudio de precios y kilometraje con la
 # 1. Función consolidada para cargar y limpiar todas las variables necesarias
 @st.cache_data
 def cargar_datos_completos():
-    df = pd.read_csv("../data/raw/vehicles_us.csv")
+    # Obtiene la ruta absoluta de la carpeta donde vive este archivo 'app.py'
+    # (En este caso, apuntará a: .../tripleten_sprint7_project)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Construimos la ruta subiendo un nivel (al directorio raíz del proyecto) 
+    # y bajando hacia la carpeta 'data/raw'
+    ruta_csv = os.path.join(current_dir, "..", "data", "raw", "vehicles_us.csv")
+    
+    # Cargamos el dataframe usando la ruta absoluta construida
+    df = pd.read_csv(ruta_csv)
     
     # Limpieza de variables técnicas (Versión 3)
     df['cylinders'] = df['cylinders'].fillna(df['cylinders'].mode()[0]).astype(int).astype(str) + " Cilindros"
